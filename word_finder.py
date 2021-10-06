@@ -28,7 +28,7 @@ def search_in_sequence(word_sequence, word_to_search):
         word_to_search (string): The word which has to searched in the sequence
 
     Returns:
-        [type]: [string or Tuple]
+        tuple: If word is found, returns Yes and word count. it not None.
     """
 
     word_sequence = word_sequence.lower()
