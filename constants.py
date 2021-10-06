@@ -1,0 +1,3 @@
+WORD_FOUND = 'Yes'
+
+WORD_NOT_FOUND = 'No'

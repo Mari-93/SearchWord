@@ -6,6 +6,8 @@
 # Last Modified at : 10/01/2021
 ########################################################################
 
+import constants as c
+
 
 def main():
     word_sequence = input("Enter the sequence with space separated words: ")
@@ -13,7 +15,7 @@ def main():
     output = search_in_sequence(word_sequence, word_to_search)
 
     if output is None:
-        print("No")
+        print(c.WORD_NOT_FOUND)
         return
 
     for i in output:
@@ -36,7 +38,7 @@ def search_in_sequence(word_sequence, word_to_search):
 
     if word_to_search in word_sequence:
         # returns a string and the count inside a tuple
-        return "Yes", word_sequence.count(word_to_search)
+        return c.WORD_FOUND, word_sequence.count(word_to_search)
 
     return None
 
