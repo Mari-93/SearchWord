@@ -23,7 +23,7 @@ class WordSequence_test(unittest.TestCase):
         output_1 = search_in_sequence(word_sequence, search_word_1)
         self.assertEqual(output_1, ("Yes", 2))
         output_2 = search_in_sequence(word_sequence, search_word_2)
-        self.assertEqual(output_2, "No")
+        self.assertEqual(output_2, None)
         search_word_3 = "4"
         output_3 = search_in_sequence(word_sequence, search_word_3)
         self.assertEqual(output_3, ("Yes", 1))

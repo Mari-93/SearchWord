@@ -35,8 +35,9 @@ def search_in_sequence(word_sequence, word_to_search):
     word_to_search = word_to_search.lower()
 
     if word_to_search in word_sequence:
-        return "Yes", word_sequence.count(word_to_search) #returns a string and the count inside a tuple
-    
+        # returns a string and the count inside a tuple
+        return "Yes", word_sequence.count(word_to_search)
+
     return None
 
 
